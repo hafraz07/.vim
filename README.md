@@ -18,5 +18,6 @@ Resources I use to get better at vim to use it as my primary editor.
 + [Difference between the different ```map```s](https://stackoverflow.com/questions/3776117/what-is-the-difference-between-the-remap-noremap-nnoremap-and-vnoremap-mapping)
 
 ### Commands to master
-+ ```;``` ``,`` to go to next and previous occurrence of ```f + <character>``` within a line
-
++ ```;``` ``,`` - Go to next and previous occurrence of ```f + <character>``` within a line.
++ ```ctrl-a``` - Insert the previous inserted text.
++ ```ctrl-r``` - Insert text from register.
