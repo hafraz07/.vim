@@ -37,7 +37,7 @@ set shiftwidth=4
 set expandtab
 
 " Get the defaults that most users want.
-source $VIMRUNTIME/defaults.vim
+" source $VIMRUNTIME/defaults.vim
 
 " Put these in an autocmd group, so that we can delete them easily.
 augroup vimrcEx

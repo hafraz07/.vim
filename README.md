@@ -10,6 +10,7 @@ Resources I use to get better at vim to use it as my primary editor.
 + [Guide to Navigation in Vim](https://blog.bespinian.io/posts/efficient-navigation-in-vim/)
     + [Youtube video covering very helpful navigation commands](https://www.youtube.com/watch?v=Qem8cpbJeYc)
 + [How to do 90% of the things plugins do with core vim](https://www.youtube.com/watch?v=XA2WjJbmmoM)
++ [Seven habits of effective text editing](https://www.moolenaar.net/habits.html)
 
 
 ### Miscellaneous helpful things
