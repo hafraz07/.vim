@@ -1,3 +1,4 @@
+set nocp
 syntax on
 colorscheme nord
 set number
@@ -31,15 +32,15 @@ set wildmode=list:longest,full                     " Command <Tab> completion, l
 
 filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete               " Language aware syntax completion <C-x><C-O>
-" show existing tab with 4 spaces width    
+" show existing tab with 4 spaces width
 set tabstop=4
 " when indenting with '>', use 4 spaces width
 set shiftwidth=4
 " on pressing tab, insert 4 spaces
 set expandtab
 " Make it obvious where 80 characters is
-set textwidth=80
-set colorcolumn=+1
+" set textwidth=80
+set colorcolumn=80
 " get the defaults that most users want.
 " source $vimruntime/defaults.vim
 
