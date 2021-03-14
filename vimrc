@@ -19,16 +19,32 @@ set foldenable                                     " Auto fold code
 set path+=**                                       " Recursive search on subdirectories using find, tabfind etc
 set relativenumber                                 " Show relative line numbers for ease of composing commands
 set vb t_vb=                                       " Disable screen flashing on error.
+
+set ignorecase
+set smartcase
+set laststatus=2                                   " Enable status bar
+set noshowmode                                     " No need for it once you have status bar
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
+
+highlight link Sneak None                          " Disable highlight in vim-sneak
+let g:sneak#use_ic_scs=1                           " Case-insensitive search
 " let g:loaded_matchparen=1                        " disable parentheses highlight
+
+" 2-character Sneak (default)
+    nmap z <Plug>Sneak_s
+    nmap Z <Plug>Sneak_S
+    " visual-mode
+    xmap z <Plug>Sneak_s
+    xmap Z <Plug>Sneak_S
+    " operator-pending-mode
+    " omap ? <Plug>Sneak_s
+    " omap ? <Plug>Sneak_S
 
 
 set wildmenu                                       " Show list instead of just completing
 set wildmode=list:longest,full                     " Command <Tab> completion, list matches, then longest common part, then all.
-"color scheme (terminal)
-"set t_co=256
-"set background=dark
-"let g:solarized_termcolors=256
-"let g:solarized_termtrans=1
 
 filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete               " Language aware syntax completion <C-x><C-O>
