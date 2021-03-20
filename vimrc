@@ -1,3 +1,14 @@
+" Plugins will be downloaded under the specified directory.
+call plug#begin('~/.vim/plugged')
+" List ends here. Plugins become visible to Vim after this call.
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-unimpaired'
+Plug 'itchyny/lightline.vim'
+Plug 'sickill/vim-pasta'
+Plug 'justinmk/vim-sneak'
+Plug 'jiangmiao/auto-pairs'
+
+call plug#end()
 set nocp
 syntax on
 colorscheme nord
@@ -5,7 +16,6 @@ set number
 set clipboard=unnamed                              " Share clipboard with OS
 set mouse=a                                        " Automatically enable mouse usage
 set mousehide                                      " Hide the mouse cursor while typing
-set showmode
 set autoindent
 set ruler                                          " Show the ruler
 set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\%P%)
@@ -33,11 +43,11 @@ let g:sneak#use_ic_scs=1                           " Case-insensitive search
 " let g:loaded_matchparen=1                        " disable parentheses highlight
 
 " 2-character Sneak (default)
-    nmap z <Plug>Sneak_s
-    nmap Z <Plug>Sneak_S
-    " visual-mode
-    xmap z <Plug>Sneak_s
-    xmap Z <Plug>Sneak_S
+    " nmap z <Plug>Sneak_s
+    " nmap Z <Plug>Sneak_S
+    " " visual-mode
+    " xmap z <Plug>Sneak_s
+    " xmap Z <Plug>Sneak_S
     " operator-pending-mode
     " omap ? <Plug>Sneak_s
     " omap ? <Plug>Sneak_S
