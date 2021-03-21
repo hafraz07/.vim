@@ -7,8 +7,10 @@ Plug 'itchyny/lightline.vim'
 Plug 'sickill/vim-pasta'
 Plug 'justinmk/vim-sneak'
 Plug 'jiangmiao/auto-pairs'
+Plug 'preservim/nerdtree'
 
 call plug#end()
+
 set nocp
 syntax on
 colorscheme nord
@@ -30,8 +32,19 @@ set path+=**                                       " Recursive search on subdire
 set relativenumber                                 " Show relative line numbers for ease of composing commands
 set vb t_vb=                                       " Disable screen flashing on error.
 
-set ignorecase
-set smartcase
+let mapleader = ","
+nnoremap <leader>h :b#<CR>                         " Switch to alternate buffer key map
+
+" NERDTree Mappings
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
+" Exit Vim if NERDTree is the only window left.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+    \ quit | endif
+
+
+set ignorecase                                     
+set smartcase                                      " Show both case letters when searching with lowercase but only uppercase if searching with uppercase
 set laststatus=2                                   " Enable status bar
 set noshowmode                                     " No need for it once you have status bar
 let g:lightline = {
@@ -59,7 +72,7 @@ set wildmode=list:longest,full                     " Command <Tab> completion, l
 filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete               " Language aware syntax completion <C-x><C-O>
 " show existing tab with 4 spaces width
-set tabstop=4
+set softtabstop=4
 " when indenting with '>', use 4 spaces width
 set shiftwidth=4
 " on pressing tab, insert 4 spaces
