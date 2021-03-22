@@ -8,12 +8,15 @@ Plug 'sickill/vim-pasta'
 Plug 'justinmk/vim-sneak'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdtree'
+Plug 'morhetz/gruvbox'
+Plug 'vim-syntastic/syntastic'
 
 call plug#end()
 
 set nocp
 syntax on
-colorscheme nord
+colorscheme gruvbox
+set bg=dark
 set number
 set clipboard=unnamed                              " Share clipboard with OS
 set mouse=a                                        " Automatically enable mouse usage
@@ -31,6 +34,7 @@ set foldenable                                     " Auto fold code
 set path+=**                                       " Recursive search on subdirectories using find, tabfind etc
 set relativenumber                                 " Show relative line numbers for ease of composing commands
 set vb t_vb=                                       " Disable screen flashing on error.
+set scrolloff=8                                    " Scroll down if cursor is < 8 lines from the bottom of the screen
 
 let mapleader = ","
 nnoremap <leader>h :b#<CR>                         " Switch to alternate buffer key map
