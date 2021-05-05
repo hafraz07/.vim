@@ -13,11 +13,13 @@ Resources I use to get better at vim to use it as my primary editor.
 + [Seven habits of effective text editing](https://www.moolenaar.net/habits.html)
 + [Vim guide for intermediate users](https://thevaluable.dev/vim-intermediate/)
 + [Vim guide for advanced users](https://thevaluable.dev/vim-advanced/)
++ [Death by a thousand files](https://vimways.org/2018/death-by-a-thousand-files/)
 
 
 ### Miscellaneous helpful things
 + ```control+z``` to shift vim to bg. ```fg``` to bring to front again.
 + [Difference between the different ```map```s](https://stackoverflow.com/questions/3776117/what-is-the-difference-between-the-remap-noremap-nnoremap-and-vnoremap-mapping)
++ [Vimcasts](https://vimcasts.org)
 
 ### Commands to master
 + ```;``` ``,`` - Go to next and previous occurrence of ```f + <character>``` within a line.
@@ -33,8 +35,10 @@ Resources I use to get better at vim to use it as my primary editor.
 + commentary
 + unimpaired
 + auto-pairs
-+ vim-trailing-whitespace
 + vim-pasta
 + surround
 + syntastic
-+ Zoom-Win
++ lightline
++ vim-noh
++ AutoComplPop
++ ReplaceWithRegister
